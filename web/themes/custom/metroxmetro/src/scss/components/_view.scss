@@ -1,0 +1,192 @@
+.view-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__icon {
+    font-size: 3rem;
+    color: $primary;
+  }
+
+  &__h2 {
+    position: relative;
+    line-height: 1;
+    font-weight: 700;
+    color: $secondary;
+    padding-top: 1rem;
+    font-family: $font-family-rokkitt;
+    letter-spacing: -1.3px;
+    font-size: 2rem;
+    @include media-breakpoint-up(md) {
+      font-size: 3rem;
+    }
+
+    &::before {
+      content: "-";
+      color: $primary;
+    }
+    &::after {
+      content: "-";
+      color: $primary;
+    }
+  }
+}
+
+.view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-areas:
+      "image image"
+      "features features"
+      "title title"
+      "address address"
+      "vector bedrooms"
+      "bathrooms garaje"
+      "save price";
+    grid-template-columns: 1fr 1fr;
+    row-gap: 0.5rem;
+    align-items: center;
+    box-shadow: 5px 5px 10px $gray-300;
+    justify-content: center;
+    width: 20.3rem;
+  }
+
+  &__image {
+    position: relative;
+    grid-area: image;
+    width: max-content;
+    transition: all 1s;
+    overflow: hidden;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      background-color: $black;
+      width: 100%;
+      height: 100%;
+      opacity: 0.4;
+      z-index: 0;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: $white;
+    padding: 0 1rem;
+    z-index: 1;
+  }
+
+  &__icon {
+    display: inline-block;
+    color: $primary;
+    margin-right: 1rem;
+  }
+
+  &__datetime {
+    display: inline-block;
+    display: flex;
+  }
+
+  &__user {
+    display: flex;
+  }
+
+  &__features {
+    grid-area: features;
+    color: $primary;
+  }
+
+  &__title {
+    grid-area: title;
+    font-family: $font-family-rokkitt;
+    font-size: 1.5rem;
+    color: $secondary;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+  }
+
+  &__address {
+    grid-area: address;
+    font-family: $font-family-poppins;
+  }
+
+  &__vector {
+    grid-area: vector;
+    color: $primary;
+    display: flex;
+    align-items: center;
+  }
+
+  &__bathrooms {
+    grid-area: bathrooms;
+    color: $primary;
+    display: flex;
+    align-items: center;
+  }
+
+  &__bedrooms {
+    grid-area: bedrooms;
+    color: $primary;
+    display: flex;
+    align-items: center;
+  }
+
+  &__garaje {
+    grid-area: garaje;
+    color: $primary;
+    display: flex;
+    align-items: center;
+  }
+
+  &__value {
+    color: $black;
+    font-size: 13px;
+    color: $gray-500;
+  }
+
+  &__sale {
+    position: relative;
+    grid-area: save;
+    color: $white;
+    text-transform: uppercase;
+    background-color: $primary;
+    padding: 0.8rem;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: -1rem;
+      z-index: 0;
+      height: 100%;
+      background-color: $secondary;
+      transform: skewX(-25deg);
+      padding: 0.8rem;
+    }
+  }
+
+  &__price {
+    grid-area: price;
+    color: $white;
+    background-color: $secondary;
+    text-align: right;
+    padding: 0.8rem;
+  }
+}

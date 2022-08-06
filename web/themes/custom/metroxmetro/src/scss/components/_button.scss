@@ -1,0 +1,50 @@
+.w-button {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 17px 90px 17px 30px;
+  transition: all 0.4s;
+  flex-basis: 100% !important;
+  display: inline-block;
+  text-decoration: none;
+
+  &--primary {
+    background-color: $primary;
+    color: #fff;
+  }
+  
+  &--secondary {
+    background-color: $secondary;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: $secondary;
+    color: $white;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    right: -12px;
+    top: 0;
+    width: 75px;
+    height: 100%;
+    color: #fb6a19;
+    transform: skewX(-20deg);
+    background-color: #0b2c3d;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    font-weight: 900;
+    font-size: 16px;
+    font-family: "Font Awesome 5 Free";
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fb6a19;
+  }
+}

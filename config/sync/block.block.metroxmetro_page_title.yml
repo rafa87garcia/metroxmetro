@@ -1,0 +1,26 @@
+uuid: 18cfcff0-77da-49bd-addc-6381de324ad1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - metroxmetro
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: metroxmetro_page_title
+theme: metroxmetro
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

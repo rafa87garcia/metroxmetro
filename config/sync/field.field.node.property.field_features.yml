@@ -1,0 +1,29 @@
+uuid: af1d2cf6-2d4a-4110-8af1-7c25beef2d91
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_features
+    - node.type.property
+    - taxonomy.vocabulary.features
+id: node.property.field_features
+field_name: field_features
+entity_type: node
+bundle: property
+label: Caracteristicas
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      features: features
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

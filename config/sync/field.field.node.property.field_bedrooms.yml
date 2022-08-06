@@ -1,0 +1,25 @@
+uuid: 389c1aaa-50ca-48cf-950a-ec7e96bae2c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bedrooms
+    - node.type.property
+id: node.property.field_bedrooms
+field_name: field_bedrooms
+entity_type: node
+bundle: property
+label: Habitaciones
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

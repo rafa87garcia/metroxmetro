@@ -1,0 +1,41 @@
+uuid: 2b740004-b9b3-489f-9a5f-0f4b206b934a
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.slider_lg
+    - image.style.slider_md
+    - image.style.slider_sm
+    - image.style.slider_xl
+  theme:
+    - metroxmetro
+id: slider
+label: Slider
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_xl
+    breakpoint_id: default.xl
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_lg
+    breakpoint_id: default.lg
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_md
+    breakpoint_id: default.md
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_sm
+    breakpoint_id: default.sm
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: slider_sm
+    breakpoint_id: default.xs
+    multiplier: 1x
+breakpoint_group: metroxmetro
+fallback_image_style: slider_xl

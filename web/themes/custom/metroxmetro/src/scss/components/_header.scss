@@ -1,0 +1,80 @@
+.header {
+  &-wrapper {
+    position: sticky;
+    top: 0;
+  }
+  &-top {
+    background-color: $secondary;
+    color: $white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+    }
+  }
+
+  &-left {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  &-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    min-width: 50%;
+    padding: 1rem;
+
+    a,
+    span {
+      color: $white;
+      @include media-breakpoint-up(lg) {
+        color: $secondary;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      background-color: $primary;
+      color: $white;
+    }
+
+    &::before {
+      content: "";
+      border-left: 0;
+
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 0;
+        left: -17px;
+        height: 100%;
+        border-left: 2rem solid $primary;
+        transform: skewX(-25deg);
+        content: "";
+      }
+    }
+  }
+  &-content {
+    position: relative;
+    height: 4rem;
+    top: 3rem;
+    left: 0;
+    padding-left: 2rem;
+    color: $secondary;
+    display: flex;
+    align-items: center;
+    background-color: $primary;
+  }
+}

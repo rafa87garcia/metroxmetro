@@ -1,0 +1,29 @@
+uuid: 71a66369-506d-4ca2-81eb-5e0090808ba8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fe3f5738-66e0-4a37-91a9-7ec7a7629187'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - metroxmetro
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-lg-9 d-flex align-items-center justify-content-center justify-content-lg-start menu-wrapper'
+id: address
+theme: metroxmetro
+region: header_bottom
+weight: -8
+provider: null
+plugin: 'block_content:fe3f5738-66e0-4a37-91a9-7ec7a7629187'
+settings:
+  id: 'block_content:fe3f5738-66e0-4a37-91a9-7ec7a7629187'
+  label: Address
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

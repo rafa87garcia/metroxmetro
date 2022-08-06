@@ -1,0 +1,55 @@
+{#
+/**
+ * @file
+ * Template for Navbar component.
+ *
+ * Available config:
+ * - container: fixed | fluid.
+ * - placement: default | fixed-top | fixed-bottom | sticky-top
+ * - color: light | dark
+ * - navbar_expand: sm | md | lg | xl
+ * - utility_classes: An array of utility classes.
+ *
+ * Available blocks:
+ * - branding
+ * - left
+ * - right
+ */
+#}
+{{ attach_library('metroxmetro/navbar') }}
+
+{% set container = container == 'fixed' ? 'container' : false %}
+{% set placement = placement ?? '' %}
+{% set color = color ?? 'light' %}
+{% set navbar_expand = navbar_expand ?? 'lg' %}
+
+<nav class="navbar-expand-{{ navbar_expand }} navbar-{{ color }} {{ placement }} {{ utility_classes|join(' ') }} p-3 p-lg-0 bg-secondary">
+
+  <button class="navbar-toggler bg-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    <i class="bi bi-list text-white"></i>
+  </button>
+
+  <div class="collapse navbar-collapse">
+
+    {% block navbar %}
+      {{ navbar }}
+    {% endblock %}
+  </div>
+
+</nav><div class="offcanvas offcanvas-end offcanvas-sidebar" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+
+<div class="offcanvas-header">
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+
+  <div class="nav-navbar">
+    {% block offcanvas %}
+      {{ offcanvas }}
+    {% endblock %}
+  </div>
+</div></div>

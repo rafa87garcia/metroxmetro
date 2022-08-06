@@ -1,0 +1,40 @@
+blocks:
+  -
+    info: Welcome
+    langcode: en
+    uuid: a3415b85-ad7d-40ec-b92f-d958b3f29fce
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<span>Welcome to MetroxMetro</span>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: Question
+    langcode: en
+    uuid: cc50d193-be80-4b60-a62b-7d6cf41e64a0
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<span>Have any question?&nbsp;<a href=\"tel:+51 970183525\">+51 970183525</a></span>\r\n"
+          summary: ''
+          format: full_html
+  -
+    info: Address
+    langcode: en
+    uuid: fe3f5738-66e0-4a37-91a9-7ec7a7629187
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<ul class=\"w-100 contact-info justify-content-center justify-content-evenly d-flex flex-column flex-lg-row\">\r\n\t<li class=\"address d-flex my-3 my-lg-0\"><i class=\"fa fa-home\" aria-hidden=\"true\"></i>\r\n<span><strong>Address </strong>908K, San Francisco </span></li>\r\n\t<li class=\"phone d-flex my-3 my-lg-0\"><i class=\"fa fa-envelope\" aria-hidden=\"true\"></i>\r\n<span><strong>Send Your Mail At </strong> <a href=\"mailto:rpita@metroxmetro.pe\">rpita@metroxmetro.pe</a> </span></li>\r\n\t<li class=\"address d-flex my-3 my-lg-0\"><i class=\"fa fa-clock-o\" aria-hidden=\"true\"></i>\r\n<span><strong>Working Hours </strong>Mon-Fri: 8:30am To 5:00pm </span></li>\r\n</ul>\r\n"
+          summary: ''
+          format: full_html

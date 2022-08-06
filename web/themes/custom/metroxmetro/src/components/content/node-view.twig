@@ -1,0 +1,101 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  'view-content',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]
+%}
+<article{{attributes.addClass(classes)}}>
+
+	{% block content %}
+		{# {{ kint(content) }} #}
+		<div class="view-content__wrapper">
+			<div class="view-content__image">
+				{{ content.field_image }}
+				<div class="view-content__info">
+					<div class="view-content__datetime">
+						<div class="view-content__icon">
+							<i class="fa fa-calendar"></i>
+						</div>
+						<div class="view-content__date">
+							{{ content.created.value|date('d-M') }}
+						</div>
+					</div>
+					<div class="view-content__user">
+						<div class="view-content__icon">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</div>
+						<div class="view-content__icon-name">
+							{{ user.displayname }}
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="view-content__features">
+
+				{% for item in content.field_features|field_value -%}
+					{% if loop.first %}
+						{{ item}}{{ ", " }}
+					{% elseif loop.last %}
+						{{ item }}
+					{% endif %}
+				{% endfor %}
+			</div>
+
+			<div class="view-content__title">{{ content.title }}</div>
+			<div class="view-content__address">{{ content.field_address }}</div>
+
+			<div class="view-content__vector">
+				<div class="view-content__icon">
+					<i class="fa fa-square" aria-hidden="true"></i>
+				</div>
+
+				<div class="view-content__value">{{ content.field_bedrooms|field_value }}</div>
+			</div>
+
+			<div class="view-content__bathrooms">
+				<div class="view-content__icon">
+					<i class="fa fa-shower" aria-hidden="true"></i>
+				</div>
+				<div class="view-content__value">{{ content.field_bathrooms|field_value }}</div>
+
+			</div>
+
+			<div class="view-content__bedrooms">
+				<div class="view-content__icon">
+					<i class="fa fa-bed" aria-hidden="true"></i>
+				</div>
+
+				<div class="view-content__value">{{ content.field_bedrooms|field_value }}</div>
+
+			</div>
+
+			<div class="view-content__garaje">
+				<div class="view-content__icon">
+					<i class="fa fa-car" aria-hidden="true"></i>
+				</div>
+
+				<div class="view-content__value">{{ content.field_bedrooms|field_value }}</div>
+
+			</div>
+
+			<div class="view-content__sale">
+				Sale
+			</div>
+			<div class="view-content__price">
+				{{ content.field_price|field_value }}
+			</div>
+		{% endblock %}
+	</article>

@@ -1,0 +1,72 @@
+{#
+/**
+ * @file
+ * Template for the main page.
+ */
+#}
+<div class="page">
+
+
+	<header class="header">
+		<class="header-wrapper">
+
+			<div class="header-top">
+				{% if page.header_top_left %}
+					<div class="header-left">
+						{{ page.header_top_left }}
+					{% endif %}
+				</div>
+				<div class="header-right">
+					{% if page.header_top_right %}
+						{{ page.header_top_right }}
+					{% endif %}
+				</div>
+			</div>
+
+			{% embed '@metroxmetro/navbar/navbar.twig' with {
+    		placement: 'sticky-top',
+  		} %}
+
+				{% block branding %}
+					{% if page.navbar_branding %}
+						{{ page.navbar_branding }}
+					{% endif %}
+				{% endblock %}
+
+				{% block navbar %}
+					{% if page.navbar %}
+						{{ page.navbar }}
+					{% endif %}
+				{% endblock %}
+
+			{% endembed %}
+
+
+		</div>
+	</header>
+
+	<div class="header-bottom">
+		<div class="container">
+			{{ page.header_bottom }}
+		</div>
+	</div>
+
+
+	<main class="main">
+		<a id="main-content" tabindex="-1"></a>
+		{# link is in html.html.twig #}
+		{% if page.content %}
+			<div class="container-fluid main-wrapper">
+				{{ page.content }}
+			</div>
+		{% endif %}
+	</main>
+
+	{% if page.footer %}
+		<footer class="footer">
+			<div class="container footer-wrapper">
+				{{ page.footer }}
+			</div>
+		</footer>
+	{% endif %}
+</div>

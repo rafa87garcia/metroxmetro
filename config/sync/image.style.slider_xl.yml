@@ -1,0 +1,15 @@
+uuid: ee6aae50-a23e-496c-95de-55b90d802cc3
+langcode: es
+status: true
+dependencies: {  }
+name: slider_xl
+label: 'Slider XL'
+effects:
+  07401a77-89b1-4b4b-bffe-ada2ca39192d:
+    uuid: 07401a77-89b1-4b4b-bffe-ada2ca39192d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 2560
+      height: 800
+      anchor: center-center

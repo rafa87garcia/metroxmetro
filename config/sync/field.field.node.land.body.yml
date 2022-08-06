@@ -1,0 +1,23 @@
+uuid: fc90806d-801e-4562-b96f-abe724415f09
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.land
+  module:
+    - text
+id: node.land.body
+field_name: body
+entity_type: node
+bundle: land
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

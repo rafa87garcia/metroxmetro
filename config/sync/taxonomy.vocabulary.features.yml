@@ -1,0 +1,8 @@
+uuid: e244a415-1f12-4f7a-ab9e-b92de99b7c01
+langcode: es
+status: true
+dependencies: {  }
+name: Caracteristicas
+vid: features
+description: ''
+weight: 0

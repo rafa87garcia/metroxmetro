@@ -1,0 +1,22 @@
+uuid: 846e473e-5435-4626-9fed-76ce8292881c
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.features
+id: taxonomy_term.features.default
+targetEntityType: taxonomy_term
+bundle: features
+mode: default
+content:
+  name:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true
+  langcode: true

@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Template for a Block component.
+ *
+ * Available config:
+ * - html_tag: The HTML tag for the block.
+ * - utility_classes: An array of utility classes.
+ */
+#}
+{{ attach_library('metroxmetro/block') }}
+{% set classes = [
+  'block',
+  bundle ? 'block--' ~ bundle|clean_class,
+  id ? 'block--' ~ id|replace({"_": "-"})|clean_class,
+]|merge(utility_classes ? utility_classes : []) %}
+
+{% if label %}
+	{% block label %}
+		<div class="view-heading">
+			<div class="view-heading__icon">
+				<i class="fa fa-home" aria-hidden="true"></i>
+			</div>
+			<h2{{title_attributes}} class="view-heading__h2">
+				{{ label }}
+			</h2>
+		</div>
+	{% endblock %}
+{% endif %}
+
+{% block content %}
+	{{ content }}
+{% endblock %}

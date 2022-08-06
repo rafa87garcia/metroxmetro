@@ -1,0 +1,5 @@
+name: MXM Layout
+type: module
+description: Layouts.
+package: Custom
+core_version_requirement: ^9 || ^10

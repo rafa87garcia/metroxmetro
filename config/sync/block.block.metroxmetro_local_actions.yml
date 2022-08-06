@@ -1,0 +1,20 @@
+uuid: e32e50eb-9d06-4c9b-b779-71536760778d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - metroxmetro
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: metroxmetro_local_actions
+theme: metroxmetro
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

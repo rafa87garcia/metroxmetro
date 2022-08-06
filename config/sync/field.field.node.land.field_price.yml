@@ -1,0 +1,23 @@
+uuid: 3fe774d0-c1d7-4465-9530-000beae1b073
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.land
+id: node.land.field_price
+field_name: field_price
+entity_type: node
+bundle: land
+label: Precio
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

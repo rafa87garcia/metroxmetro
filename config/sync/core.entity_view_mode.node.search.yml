@@ -1,0 +1,10 @@
+uuid: eb58e1cf-0c85-485f-b134-26e7a03cc5df
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.search
+label: Search
+targetEntityType: node
+cache: true

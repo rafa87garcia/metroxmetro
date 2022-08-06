@@ -1,0 +1,91 @@
+{#
+/**
+ * @file
+ * Template for a Node.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  'slider',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+]
+%}
+
+<article{{attributes.addClass(classes)}} ">
+	{% block content %}
+
+		<div class="slider__image">
+			{{ content.field_image }}
+
+			<div class="slider__content">
+				<div class="slider__info">
+					{% if content.title|field_value %}
+						<div class="slider__title">{{ content.title }}</div>
+					{% endif %}
+					{% if content.field_address|field_value %}
+
+						<div class="slider__address">{{ content.field_address }}</div>
+					{% endif %}
+
+					{% if content.field_bathrooms|field_value or content.field_bedrooms|field_label %}
+
+						<div class="slider__icons">
+
+							{% if content.field_bathrooms|field_value %}
+								<div class="slider__item">
+									<div class="slider__icon">
+										<i class="fa fa-square" aria-hidden="true"></i>
+
+									</div>
+									<div class="slider__label">
+										{{ content.field_bathrooms|field_label }}
+									</div>
+									<div class="slider__value">
+										{{ content.field_bathrooms|field_value }}
+									</div>
+								</div>
+							{% endif %}
+
+							{% if content.field_bedrooms|field_label %}
+								<div class="slider__item">
+									<div class="slider__icon">
+										<i class="fa fa-bed" aria-hidden="true"></i>
+									</div>
+									<div class="slider__label">
+										{{ content.field_bedrooms|field_label }}
+									</div>
+									<div class="slider__value">
+										{{ content.field_bedrooms|field_value }}
+									</div>
+								</div>
+							{% endif %}
+						</div>
+					{% endif %}
+				</div>
+
+				{% if content.field_price|field_value %}
+					<div class="slider__price">
+						<div class="slider__label slider__label--price">
+							{{ content.field_price|field_label }}
+						</div>
+
+						<div class="slider__value slider__value--price">
+							{{ content.field_price|field_value }}
+						</div>
+
+						<div class="slider__link">
+							<a type="button" class="w-button w-button--secondary" ref="{{ path('system.admin') }}">Contacta</a>
+						</div>
+					</div>
+
+				{% endif %}
+
+			</div>
+		</div>
+	{% endblock %}
+</article>

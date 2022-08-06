@@ -1,0 +1,10 @@
+uuid: 080268b4-3881-426e-baae-87c4b03b529f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.view
+label: View
+targetEntityType: node
+cache: true

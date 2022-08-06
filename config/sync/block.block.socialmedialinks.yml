@@ -1,0 +1,129 @@
+uuid: 45a3db4c-9456-40c3-85bd-39398ed07ff8
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media_links
+  theme:
+    - metroxmetro
+id: socialmedialinks
+theme: metroxmetro
+region: header_top_right
+weight: -6
+provider: null
+plugin: social_media_links_block
+settings:
+  id: social_media_links_block
+  label: 'Social Media Links'
+  label_display: '0'
+  provider: social_media_links
+  platforms:
+    facebook:
+      value: metroxmetro.pe
+      description: ''
+      weight: '-34'
+    instagram:
+      value: metroxmetroinmobiliaria
+      description: ''
+      weight: '-33'
+    drupal:
+      value: ''
+      description: ''
+      weight: '-32'
+    behance:
+      value: ''
+      description: ''
+      weight: '-31'
+    rss:
+      value: ''
+      description: ''
+      weight: '-30'
+    googleplus:
+      value: ''
+      description: ''
+      weight: '-29'
+    pinterest:
+      value: ''
+      description: ''
+      weight: '-28'
+    youtube_channel:
+      value: ''
+      description: ''
+      weight: '-27'
+    slideshare:
+      value: ''
+      description: ''
+      weight: '-26'
+    website:
+      value: ''
+      description: ''
+      weight: '-25'
+    gitlab:
+      value: ''
+      description: ''
+      weight: '-24'
+    bitbucket:
+      value: ''
+      description: ''
+      weight: '-23'
+    tumblr:
+      value: ''
+      description: ''
+      weight: '-22'
+    contact:
+      value: ''
+      description: ''
+      weight: '-21'
+    flickr:
+      value: ''
+      description: ''
+      weight: '-20'
+    xing:
+      value: ''
+      description: ''
+      weight: '-19'
+    email:
+      value: ''
+      description: ''
+      weight: '-18'
+    vimeo:
+      value: ''
+      description: ''
+      weight: '-17'
+    whatsapp:
+      value: ''
+      description: ''
+      weight: '-16'
+    youtube:
+      value: ''
+      description: ''
+      weight: '-15'
+    twitter:
+      value: ''
+      description: ''
+      weight: '-14'
+    vkontakte:
+      value: ''
+      description: ''
+      weight: '-13'
+    linkedin:
+      value: ''
+      description: ''
+      weight: '-12'
+    github:
+      value: ''
+      description: ''
+      weight: '-11'
+  appearance:
+    orientation: h
+    show_name: 0
+    suggestion: ''
+  link_attributes:
+    target: _blank
+    rel: '<none>'
+  iconset:
+    style: 'fontawesome:lg'
+    installed_iconsets:
+      fontawesome:
+        examples: ''
+visibility: {  }

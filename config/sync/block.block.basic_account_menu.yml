@@ -1,0 +1,27 @@
+uuid: d113c19d-bb3d-4781-b9b1-d32293cd8abc
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - basic
+_core:
+  default_config_hash: lp_9jG6_x-J2FD-uVf77Dhn1xr5eZ2fMqj-EM2fiRAo
+id: basic_account_menu
+theme: basic
+region: header
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

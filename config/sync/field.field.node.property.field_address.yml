@@ -1,0 +1,49 @@
+uuid: 327320a1-fa81-465c-8069-29699c29fd21
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.property
+  module:
+    - address
+id: node.property.field_address
+field_name: field_address
+entity_type: node
+bundle: property
+label: Dirección
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    langcode: es
+    country_code: PE
+    administrative_area: ''
+    locality: ''
+    dependent_locality: null
+    postal_code: ''
+    sorting_code: null
+    address_line1: ''
+    address_line2: null
+    organization: null
+    given_name: null
+    additional_name: null
+    family_name: null
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine2:
+      override: hidden
+  fields: {  }
+field_type: address

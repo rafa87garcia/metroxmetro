@@ -1,0 +1,15 @@
+uuid: 7cf3844c-7879-4e81-8758-fe22fd8e838f
+langcode: es
+status: true
+dependencies: {  }
+name: slider_sm
+label: 'Slider SM'
+effects:
+  bbd61f7e-714c-46ab-940b-0fb35e864746:
+    uuid: bbd61f7e-714c-46ab-940b-0fb35e864746
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 1200
+      anchor: center-center

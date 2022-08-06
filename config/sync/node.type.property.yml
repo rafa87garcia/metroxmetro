@@ -1,0 +1,17 @@
+uuid: 40ab62d9-13b0-4bb8-8610-282412cff1e1
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Propiedad
+type: property
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

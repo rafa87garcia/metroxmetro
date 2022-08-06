@@ -1,0 +1,23 @@
+uuid: ad53ba6f-9d16-43f1-a715-0e9ad3d05ade
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_price
+    - node.type.property
+id: node.property.field_price
+field_name: field_price
+entity_type: node
+bundle: property
+label: Precio
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

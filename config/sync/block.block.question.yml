@@ -1,0 +1,29 @@
+uuid: 5341526c-728e-4506-ab12-9dfc55fe4810
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cc50d193-be80-4b60-a62b-7d6cf41e64a0'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - metroxmetro
+third_party_settings:
+  block_class:
+    classes: questions
+id: question
+theme: metroxmetro
+region: header_top_right
+weight: -7
+provider: null
+plugin: 'block_content:cc50d193-be80-4b60-a62b-7d6cf41e64a0'
+settings:
+  id: 'block_content:cc50d193-be80-4b60-a62b-7d6cf41e64a0'
+  label: Question
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

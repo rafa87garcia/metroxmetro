@@ -1,0 +1,15 @@
+uuid: fdb0358b-67fd-4a1c-8dc5-73c922c31d13
+langcode: es
+status: true
+dependencies: {  }
+name: slider_lg
+label: 'Slider LG'
+effects:
+  1738ab63-1e65-40f0-8eda-03bc6286975d:
+    uuid: 1738ab63-1e65-40f0-8eda-03bc6286975d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 800
+      anchor: center-center

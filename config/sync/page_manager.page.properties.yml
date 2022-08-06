@@ -1,0 +1,12 @@
+uuid: 4058620f-0e88-43ac-a1b7-e1e97b5b2288
+langcode: es
+status: true
+dependencies: {  }
+id: properties
+label: Propiedades
+description: ''
+use_admin_theme: false
+path: /propiedades
+access_logic: and
+access_conditions: {  }
+parameters: {  }

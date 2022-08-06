@@ -1,0 +1,26 @@
+uuid: 62182cac-bb93-435a-bae9-4e0df5621394
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - metroxmetro
+third_party_settings:
+  block_class:
+    classes: 'order-3 order-lg-1'
+_core:
+  default_config_hash: I6Esh8cDlPdl2POZg4MOSRUrQNYA1UNCJCxL2yqT_wc
+id: metroxmetro_powered
+theme: metroxmetro
+region: footer
+weight: -5
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

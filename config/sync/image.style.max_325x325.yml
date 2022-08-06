@@ -1,0 +1,28 @@
+uuid: 23d0ccf3-4dd3-4ffd-bb82-1222d822f1a8
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: HAJh3VFnKZmYvJF2Rsnc2HETYtffmXFcQr2FhVPmnSU
+name: max_325x325
+label: 'Max 325x325'
+effects:
+  cb842cc8-682f-42a6-bd05-5a1ac726f0d8:
+    uuid: cb842cc8-682f-42a6-bd05-5a1ac726f0d8
+    id: image_scale
+    weight: -9
+    data:
+      width: 325
+      height: 325
+      upscale: false
+  ebebda5e-3d72-48ff-84ac-1c43f2ae50be:
+    uuid: ebebda5e-3d72-48ff-84ac-1c43f2ae50be
+    id: image_scale_and_crop
+    weight: -10
+    data:
+      width: 325
+      height: 325
+      anchor: center-center

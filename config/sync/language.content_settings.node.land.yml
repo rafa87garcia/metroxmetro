@@ -1,0 +1,16 @@
+uuid: 5506e2b3-b51e-4f5f-91e2-d6f630a410b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.land
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.land
+target_entity_type_id: node
+target_bundle: land
+default_langcode: site_default
+language_alterable: false

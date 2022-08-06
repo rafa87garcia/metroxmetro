@@ -1,0 +1,23 @@
+uuid: 73efb843-0e96-47f9-ae56-252a4a156a2a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bathrooms
+    - node.type.property
+id: node.property.field_bathrooms
+field_name: field_bathrooms
+entity_type: node
+bundle: property
+label: Baños
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

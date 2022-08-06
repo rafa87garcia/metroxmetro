@@ -1,0 +1,15 @@
+uuid: 9ba041cc-5b30-4370-9155-52f69ebf75d4
+langcode: es
+status: true
+dependencies: {  }
+name: slider_md
+label: 'Slider MD'
+effects:
+  cf2234c6-2ed7-4272-8b39-fe49a63a1217:
+    uuid: cf2234c6-2ed7-4272-8b39-fe49a63a1217
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 1600
+      anchor: center-center

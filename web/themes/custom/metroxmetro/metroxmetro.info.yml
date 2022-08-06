@@ -1,0 +1,29 @@
+name: metroxmetro
+description: A theme based on Radix.
+screenshot: screenshot.png
+core_version_requirement: ^8.7.7 || ^9.0
+version: VERSION
+engine: twig
+type: theme
+base theme: radix
+
+logo: "logo2.png"
+
+regions:
+  navbar: Navbar
+  header_top_left: Header top left
+  header_top_right: Header top rigth
+  header_bottom: Bottom Header
+  language: Language
+  content: Content
+  footer: Footer
+
+libraries:
+  - metroxmetro/style
+
+ckeditor_stylesheets:
+  - build/css/main.style.css
+
+components:
+  namespaces:
+    metroxmetro: src/components

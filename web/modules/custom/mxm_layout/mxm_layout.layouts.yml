@@ -1,0 +1,12 @@
+mxm_layout_home:
+  label: 'MXM Layout Home'
+  category: 'MXM Theming Layouts'
+  template: templates/mxm-layout-home
+  default_region: content
+  icon_map:
+    - [slider, content]
+  regions:
+    slider:
+      label: Slider
+    content:
+      label: Content

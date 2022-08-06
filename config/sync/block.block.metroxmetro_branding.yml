@@ -1,0 +1,29 @@
+uuid: 64448560-0ec5-453f-b80e-27deb232406c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - metroxmetro
+third_party_settings:
+  block_class:
+    classes: 'col-12 col-lg-3  d-flex justify-content-center logo-wrapper'
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: metroxmetro_branding
+theme: metroxmetro
+region: navbar
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

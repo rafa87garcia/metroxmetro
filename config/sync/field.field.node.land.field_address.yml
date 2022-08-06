@@ -1,0 +1,25 @@
+uuid: 79b6e57d-7405-4809-bc7c-dbf1043089e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.land
+  module:
+    - address
+id: node.land.field_address
+field_name: field_address
+entity_type: node
+bundle: land
+label: Dirección
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

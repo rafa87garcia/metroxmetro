@@ -1,0 +1,21 @@
+uuid: 9cdc46ef-2ad0-4d17-9f53-e78100c7fbe8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_map
+    - node.type.land
+  module:
+    - geofield
+id: node.land.field_map
+field_name: field_map
+entity_type: node
+bundle: land
+label: Mapa
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield
